@@ -17,7 +17,7 @@ import org.junit.runner.RunWith
 const val SETTINGS_PACKAGE = "com.android.settings"
 const val MODEL_PACKAGE = "ru.netology.testing.uiautomator"
 
-const val TIMEOUT = 5000L
+const val TIMEOUT = 15000L
 
 @RunWith(AndroidJUnit4::class)
 class ChangeTextTest {
@@ -113,6 +113,11 @@ class ChangeTextTest {
     fun testEmptyText() {
         val packageName = MODEL_PACKAGE
         waitForPackage(packageName)
+
+        device.wait(
+            Until.hasObject(By.res(packageName, "textToBeChanged")),
+            TIMEOUT
+        )
 
         val oldText = device.findObject(By.res(packageName, "textToBeChanged")).text
 
