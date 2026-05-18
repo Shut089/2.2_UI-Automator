@@ -1,3 +1,5 @@
+[![Android CI](https://github.com/Shut089/2.2_UI-Automator/actions/workflows/android.yml/badge.svg)](https://github.com/Shut089/2.2_UI-Automator/actions/workflows/android.yml)
+
 # Домашнее задание к занятию «2.2. UI Automator. Автоматизация тестирования Android»
 
 Возьмите за основу [лекционный проект](sample) и дополните решениями заданий.
